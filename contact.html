@@ -18,13 +18,15 @@
     <!-- <i class="fa-solid fa-plus"></i> -->
     <!-- <i class="fa-solid fa-minus"></i> -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <!-- CSS STYLE LINK -->
 
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
-
 
     <!-- GOOGLE FONT -->
 
@@ -41,7 +43,6 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    
   </head>
   <body>
     <!-- ====================== NAVBAR ===================== -->
@@ -50,83 +51,162 @@
       <div class="container nav-container">
         <a href="/"><h4>SAMVIC CODES</h4></a>
 
-        <ul>
+        <ul class="menu">
           <li><a href="/">Home</a></li>
           <li><a href="/courses.html">Courses</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
 
-           <i class="fa-solid fa-bars nav-icon"></i>
-           <i class="fa-solid fa-xmark  nav-icon"></i>
-
+        <i class="fa-solid fa-bars nav-icon open-menu"></i>
+        <i class="fa-solid fa-xmark nav-icon close-menu"></i>
+      </div>
     </nav>
 
-    <!-- ====================== HEADER ===================== -->
+    <!-- ====================== CONTACT ===================== -->
+
+    <section class="contact">
+      <div class="container contact-container">
+        <!--  -->
+
+            <!-- ====================== CONTACT LEFT ===================== -->
 
 
+        <div class="contact-left">
+          <div class="avatar">
+            <img src="/images/contact.svg" alt="" />
+          </div>
 
-    
-<footer>
-  <div class="container footer-container">
-    <!--  -->
-    
-    <div class="footer-1">
-<h4>SAMVIC CODES</h4>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut obcaecati a provident magni aspernatur velit?</p>
-    </div>
+          <div class="contact-us">
+            <h3>Contact us</h3>
 
-    <div class="footer-2">
-      <h4>Permalinks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
 
-<ul class="links">
-  <li><a href="/">Home</a></li>
-  <li><a href="/">About</a></li>
-  <li><a href="/">Courses</a></li>
-  <li><a href="/">Contact</a></li>
-</ul>
-    </div>
 
-    <div class="footer-3">
-      <h4>Primary</h4>
+          <div class="contact-info">
+            <div class="contact-credentials">
+              <span><i class="fa-solid fa-phone"></i></span>
 
-<ul class="links">
-  <li><a href="/">Privacy Policy</a></li>
-  <li><a href="/">Terms and Conditions </a></li>
-  <li><a href="/">Refund Policy</a></li>
-</ul>
-    </div>
+              <small>+2348146557494</small>
+            </div>
 
-    <div class="footer-4">
-      <h4>Contact</h4>
 
-      <div>
-        <li><a href="/">+2348146557494</a></li>
-        <li><a href="/">victorakpobasa2020@gmail.com</a></li>
+            <div class="contact-credentials">
+              <span><i class="fa-solid fa-envelope"></i></span>
 
+              <small>victorakpobasa2020@gmail.com</small>
+            </div>
+
+
+            <div class="contact-credentials">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+
+              <small>Lagos, Nigeria</small>
+            </div>
+          </div>
+
+
+          <div class="contact-socials">
+            <a href="/"><i class="fa-brands fa-facebook-f"></i></i></a>
+            <a href="/"><i class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="/"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="/"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+
+
+            <!-- ====================== CONTACT RIGHT ===================== -->
+
+        <div class="contact-right">
+          <form>
+
+          <div class="input-info">
+            <input type="text" name="First Name" placeholder="First Name" required/>
+            <input type="text" name="Last Name" placeholder="Last Name" required/>
+          </div>
+
+            <input
+              type="email"
+              name="Email Address"
+              placeholder="Your Email Address"
+              required
+            />
+             <textarea name="Message" rows="7" placeholder="Write Your Message"></textarea>
+
+            <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
+          </form>
+        </div>
       </div>
+    </section>
 
-<ul class="links">
-  <li><a href="/"><i class="fa-solid fa-bars nav-icon"></i></a></li>
-  <li><a href="/"><i class="fa-solid fa-bars nav-icon"></i></a></li>
-  <li><a href="/"><i class="fa-solid fa-bars nav-icon"></i></a></li>
-  <li><a href="/"><i class="fa-solid fa-bars nav-icon"></i></a></li>
-</ul>
+    <footer>
+      <div class="container footer-container">
+        <!--  -->
+
+        <div class="footer-1">
+          <h4>SAMVIC CODES</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            obcaecati a provident magni aspernatur velit?
+          </p>
+        </div>
+
+        <div class="footer-2">
+          <h4>Permalinks</h4>
+
+          <ul class="links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Courses</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-3">
+          <h4>Primary</h4>
+
+          <ul class="links">
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms and Conditions </a></li>
+            <li><a href="/">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-4">
+          <h4>Contact</h4>
+
+          <div>
+            <li><a href="/">+2348146557494</a></li>
+            <li><a href="/">victorakpobasa2020@gmail.com</a></li>
+          </div>
+
+          <ul class="links icon-links">
+            <li>
+              <a href="/"><i class="fa-brands fa-facebook footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-linkedin footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-whatsapp footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-twitter footer-icon"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!--  -->
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <small> SAMVIC EDUCATION WEBSITE </small>
     </div>
 
-    <!--  -->
-  </div>
-</footer>
-
-<div class="copyright">
-  <small>
-    SAMVIC EDUCATION WEBSITE
-
-  </small>
-</div>
-
-
-<script src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

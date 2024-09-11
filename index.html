@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- ====================== HEAD ===================== -->
-
+  <!-- ====================== HEAD ===================== -->
 
   <head>
     <meta charset="UTF-8" />
@@ -11,17 +10,17 @@
 
     <title>SAMVIC EDUCATION WEBSITE</title>
 
-    <!-- FONT AWESOME -->
-    <!-- <i class="fa-brands fa-facebook"></i> -->
-    <!-- <i class="fa-brands fa-linkedin"></i> -->
-    <!-- <i class="fa-brands fa-whatsapp"></i> -->
-    <!-- <i class="fa-brands fa-twitter"></i> -->
-    <!-- <i class="fa-brands fa-instagram"></i> -->
+    <!-- SWIPER JS -->
 
-    <!-- <i class="fa-solid fa-plus"></i> -->
-    <!-- <i class="fa-solid fa-minus"></i> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
 
     <!-- CSS STYLE LINK -->
 
@@ -42,9 +41,7 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    
   </head>
-
 
   <body>
     <!-- ====================== NAVBAR ===================== -->
@@ -53,16 +50,16 @@
       <div class="container nav-container">
         <a href="/"><h4>SAMVIC CODES</h4></a>
 
-        <ul>
+        <ul class="menu">
           <li><a href="/">Home</a></li>
           <li><a href="/courses.html">Courses</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
 
-           <i class="fa-solid fa-bars nav-icon"></i>
-           <i class="fa-solid fa-xmark  nav-icon"></i>
-
+        <i class="fa-solid fa-bars nav-icon open-menu"></i>
+        <i class="fa-solid fa-xmark nav-icon close-menu"></i>
+      </div>
     </nav>
 
     <!-- ====================== HEADER ===================== -->
@@ -96,7 +93,6 @@
     <!-- ====================== CATEGORIES ===================== -->
 
     <section class="categories">
-
       <!--  -->
       <div class="container category-container">
         <div class="category-left">
@@ -121,50 +117,37 @@
 
             <h5>Blockchain</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur 
-
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </article>
 
           <article class="category">
             <span class="category-icon">
               <i class="uil uil-palette"></i>
-                        </span>
+            </span>
 
             <h5>Blockchain</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur 
-
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </article>
 
           <article class="category">
             <span class="category-icon">
               <i class="uil uil-usd-circle"></i>
-
-                </span>
+            </span>
 
             <h5>Blockchain</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur 
-
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </article>
 
           <article class="category">
             <span class="category-icon">
-              <i class="uil uil-megaphone"></i>       
-                 </span>
+              <i class="uil uil-megaphone"></i>
+            </span>
 
             <h5>Blockchain</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur 
-             
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </article>
 
           <article class="category">
@@ -174,10 +157,7 @@
 
             <h5>Blockchain</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur 
-
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </article>
 
           <article class="category">
@@ -187,10 +167,7 @@
 
             <h5>Blockchain</h5>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur 
-
-            </p>
+            <p>Lorem ipsum dolor sit amet consectetur</p>
           </article>
 
           <!--  -->
@@ -200,417 +177,493 @@
       <!--  -->
     </section>
 
-        <!-- ====================== COURSES ===================== -->
+    <!-- ====================== COURSES ===================== -->
 
-        <section class="courses">
-          <!--  -->
+    <section class="courses">
+      <!--  -->
 
-          <h2>Our Popular Courses</h2>
-          
-          <div class="container courses-container">
-<div class="courses-wrapper">
-  <div class="course">
-  <img src="/images/course1.jpg" alt="">
+      <h2>Our Popular Courses</h2>
 
-  <div class="course-info">
+      <div class="container courses-container">
+        <div class="courses-wrapper">
+          <div class="course">
+            <img src="/images/course1.jpg" alt="" />
 
-  <h4>Responsive Social Media Website UI Design</h4>
+            <div class="course-info">
+              <h4>Responsive Social Media Website UI Design</h4>
 
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, incidunt deserunt eaque quibusdam eligendi iusto! Quibusdam dicta doloremque esse.</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque, incidunt deserunt eaque quibusdam eligendi iusto!
+                Quibusdam dicta doloremque esse.
+              </p>
 
-  <a href="/courses.html" class="btn btn-primary">Learn More</a>
-</div>
-
-</div>
-<div class="course">
-
-  <img src="/images/course2.jpg" alt="">
-
-  <div class="course-info">
-    <h4>Responsive Social Media Website UI Design</h4>
-
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, incidunt deserunt eaque quibusdam eligendi iusto! Quibusdam dicta doloremque esse.</p>
-
-  <a href="/courses.html" class="btn btn-primary">Learn More</a>
-</div>
-</div>
-<div class="course">
-
-  <img src="/images/course3.jpg" alt="">
-
-  <div class="course-info">
-
-  <h4>Responsive Social Media Website UI Design</h4>
-
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, incidunt deserunt eaque quibusdam eligendi iusto! Quibusdam dicta doloremque esse.</p>
-
-  <a href="/courses.html" class="btn btn-primary">Learn More</a>
-  <div>
-</div>
-  </div>
-</div>
+              <a href="/courses.html" class="btn btn-primary">Learn More</a>
+            </div>
           </div>
+          <div class="course">
+            <img src="/images/course2.jpg" alt="" />
+
+            <div class="course-info">
+              <h4>Responsive Social Media Website UI Design</h4>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque, incidunt deserunt eaque quibusdam eligendi iusto!
+                Quibusdam dicta doloremque esse.
+              </p>
+
+              <a href="/courses.html" class="btn btn-primary">Learn More</a>
+            </div>
           </div>
-          
-          <!--  -->
-        </section>
-
-
-                <!-- ====================== FAQ ===================== -->
-
-
-<section class="faqs">
-  <!--  -->
-
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="container faq-container">
-    <!--  -->
-
-    <div class="faq-wrapper">
-<div class="faq">
-      <i class="fa-solid fa-plus"></i>
-
-      <div class="question-answer">
-
-<h4>Lorem ipsum dolor sit amet.</h4>
-
-<p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iure.</p>
- </div>
-</div>
-<div class="faq">
-      <i class="fa-solid fa-plus"></i>
-
-      <div class="question-answer">
-
-<h4>Lorem ipsum dolor sit amet.</h4>
-
-<p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iure.</p>
- </div>
-</div>
-<div class="faq">
-      <i class="fa-solid fa-plus"></i>
-
-      <div class="question-answer">
-
-<h4>Lorem ipsum dolor sit amet.</h4>
-
-<p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iure.</p>
- </div>
-</div>
-<div class="faq">
-      <i class="fa-solid fa-plus"></i>
-
-      <div class="question-answer">
-
-<h4>Lorem ipsum dolor sit amet.</h4>
-
-<p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iure.</p>
- </div>
-</div>
-<div class="faq">
-      <i class="fa-solid fa-plus"></i>
-
-      <div class="question-answer">
-
-<h4>Lorem ipsum dolor sit amet.</h4>
-
-<p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iure.</p>
- </div>
-</div>
-<div class="faq">
-      <i class="fa-solid fa-plus"></i>
-
-      <div class="question-answer">
-
-<h4>Lorem ipsum dolor sit amet.</h4>
-
-<p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, iure.</p>
- </div>
-</div>
-    </div>
-
-    <!--  -->
-  </div>
-</section>
-
-
-                <!-- ====================== TESTIMONIALS ===================== -->
-
-                <section class="testimonials">
-                  <h2>Students' Testimonials</h2>
-
-                  <div class="container testimonials-container">
-<div class="testimonial-wrapper">
-  <!--  -->
-
-  <div class="testimonial">
-    <!--  -->
-
-    <div class="avatar">
-      <img src="/images/tm1.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm2.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm3.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm4.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm5.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm6.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm7.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm8.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm9.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-
-  <div class="testimonial">
-    <div class="avatar">
-      <img src="/images/tm10.jpg" alt="testimonial-image">
-    </div>
-
-<div class="testimonial-info">
-  <h5>Mr SamVic</h5>
-  
-<small>Web Developer</small>
-
-</div>
-
-<div class="testimonial-body">
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, amet!</p>
-</div>
-
-<!--  -->
-  </div>
-
-  <!--  -->
-</div>
-                  </div>
-                </section>
-
-
- <!-- ====================== FOOTER ===================== -->
-
-
-<footer>
-  <div class="container footer-container">
-    <!--  -->
-    
-    <div class="footer-1">
-<h4>SAMVIC CODES</h4>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut obcaecati a provident magni aspernatur velit?</p>
-    </div>
-
-    <div class="footer-2">
-      <h4>Permalinks</h4>
-
-<ul class="links">
-  <li><a href="/">Home</a></li>
-  <li><a href="/">About</a></li>
-  <li><a href="/">Courses</a></li>
-  <li><a href="/">Contact</a></li>
-</ul>
-    </div>
-
-    <div class="footer-3">
-      <h4>Primary</h4>
-
-<ul class="links">
-  <li><a href="/">Privacy Policy</a></li>
-  <li><a href="/">Terms and Conditions </a></li>
-  <li><a href="/">Refund Policy</a></li>
-</ul>
-    </div>
-
-    <div class="footer-4">
-      <h4>Contact</h4>
-
-      <div>
-        <li><a href="/">+2348146557494</a></li>
-        <li><a href="/">victorakpobasa2020@gmail.com</a></li>
-
+          <div class="course">
+            <img src="/images/course3.jpg" alt="" />
+
+            <div class="course-info">
+              <h4>Responsive Social Media Website UI Design</h4>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloremque, incidunt deserunt eaque quibusdam eligendi iusto!
+                Quibusdam dicta doloremque esse.
+              </p>
+
+              <a href="/courses.html" class="btn btn-primary">Learn More</a>
+              <div></div>
+            </div>
+          </div>
+        </div>
       </div>
 
-<ul class="links icon-links">
-  <li><a href="/"><i class="fa-brands fa-facebook footer-icon"></i></a></li>
-  <li><a href="/"><i class="fa-brands fa-linkedin footer-icon"></i></a></li>
-  <li><a href="/"><i class="fa-brands fa-whatsapp footer-icon"></i></a></li>
-  <li><a href="/"><i class="fa-brands fa-twitter footer-icon"></i></a></li>
-</ul>
-    </div>
+      <!--  -->
+    </section>
+
+    <!-- ====================== FAQ ===================== -->
+
+    <section class="faqs">
+      <!--  -->
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="container faq-container">
+        <!--  -->
+
+        <div class="faq-wrapper">
+          <div class="faq">
+            <i class="fa-solid fa-plus"></i>
+
+            <div class="question-answer">
+              <h4>Lorem ipsum dolor sit amet.</h4>
+
+              <p class="answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam reiciendis pariatur corporis cum minus, expedita illo
+                vero iure magnam culpa!
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <!-- <i class="fa-solid fa-plus"></i> -->
+
+            <i class="fa-solid fa-plus"></i>
+            <!-- <i class="fa-solid fa-minus"></i> -->
+
+            <div class="question-answer">
+              <h4>Lorem ipsum dolor sit amet.</h4>
+
+              <p class="answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam reiciendis pariatur corporis cum minus, expedita illo
+                vero iure magnam culpa!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <i class="fa-solid fa-plus"></i>
+
+            <div class="question-answer">
+              <h4>Lorem ipsum dolor sit amet.</h4>
+
+              <p class="answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam reiciendis pariatur corporis cum minus, expedita illo
+                vero iure magnam culpa!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <i class="fa-solid fa-plus"></i>
+
+            <div class="question-answer">
+              <h4>Lorem ipsum dolor sit amet.</h4>
+
+              <p class="answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam reiciendis pariatur corporis cum minus, expedita illo
+                vero iure magnam culpa!
+              </p>
+            </div>
+          </div>
+
+          <div class="faq">
+            <i class="fa-solid fa-plus"></i>
+
+            <div class="question-answer">
+              <h4>Lorem ipsum dolor sit amet.</h4>
+
+              <p class="answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam reiciendis pariatur corporis cum minus, expedita illo
+                vero iure magnam culpa!
+              </p>
+            </div>
+          </div>
+          <div class="faq">
+            <i class="fa-solid fa-plus"></i>
+
+            <div class="question-answer">
+              <h4>Lorem ipsum dolor sit amet.</h4>
+
+              <p class="answer">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quibusdam reiciendis pariatur corporis cum minus, expedita illo
+                vero iure magnam culpa!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
+    </section>
+
+    <!-- ====================== TESTIMONIALS ===================== -->
+
+    <section class="container testimonials-container mySwiper">
+      <h2>Students' Testimonials</h2>
+      <div div class="swiper-wrapper">
+        <!--  -->
+
+        <div class="testimonial swiper-slide">
+          <!--  -->
+
+          <div class="avatar">
+            <img src="/images/tm1.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm2.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm3.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm4.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm5.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm6.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm7.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm8.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm9.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+
+        <div class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="/images/tm10.jpg" alt="testimonial-image" />
+          </div>
+
+          <div class="testimonial-info">
+            <h5>Mr SamVic</h5>
+
+            <small>Web Developer</small>
+          </div>
+
+          <div class="testimonial-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              dolore porro explicabo, ullam maxime fugiat? Lorem ipsum, dolor
+              sit amet consectetur adipisicing elit. Hic, amet!
+            </p>
+          </div>
+
+          <!--  -->
+        </div>
+
+        <!--  -->
+      </div>
+      <!-- <div class="swiper-pagination"></div> -->
+    </section>
+
+    <!-- ====================== FOOTER ===================== -->
+
+    <footer>
+      <div class="container footer-container">
+        <!--  -->
+
+        <div class="footer-1">
+          <h4>SAMVIC CODES</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+            obcaecati a provident magni aspernatur velit?
+          </p>
+        </div>
+
+        <div class="footer-2">
+          <h4>Permalinks</h4>
+
+          <ul class="links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Courses</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-3">
+          <h4>Primary</h4>
+
+          <ul class="links">
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms and Conditions </a></li>
+            <li><a href="/">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-4">
+          <h4>Contact</h4>
+
+          <div>
+            <li><a href="/">+2348146557494</a></li>
+            <li><a href="/">victorakpobasa2020@gmail.com</a></li>
+          </div>
+
+          <ul class="links icon-links">
+            <li>
+              <a href="/"><i class="fa-brands fa-facebook footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-linkedin footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-whatsapp footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="/"><i class="fa-brands fa-twitter footer-icon"></i></a>
+            </li>
+          </ul>
+        </div>
 
         <!-- FONT AWESOME -->
-    <!-- <i class="fa-brands fa-facebook"></i> -->
-    <!-- <i class="fa-brands fa-linkedin"></i> -->
-    <!-- <i class="fa-brands fa-whatsapp"></i> -->
-    <!-- <i class="fa-brands fa-twitter"></i> -->
-    <!-- <i class="fa-brands fa-instagram"></i> -->
+        <!-- <i class="fa-brands fa-facebook"></i> -->
+        <!-- <i class="fa-brands fa-linkedin"></i> -->
+        <!-- <i class="fa-brands fa-whatsapp"></i> -->
+        <!-- <i class="fa-brands fa-twitter"></i> -->
+        <!-- <i class="fa-brands fa-instagram"></i> -->
 
-    <!-- <i class="fa-solid fa-plus"></i> -->
-    <!-- <i class="fa-solid fa-minus"></i> -->
-    <!--  -->
-  </div>
-</footer>
+        <!-- <i class="fa-solid fa-plus"></i> -->
+        <!-- <i class="fa-solid fa-minus"></i> -->
+        <!--  -->
+      </div>
+    </footer>
 
-<div class="copyright">
-  <small>
-    SAMVIC EDUCATION WEBSITE
+    <!-- ====================== COPYRIGHT ===================== -->
 
-  </small>
-</div>
+    <div class="copyright">
+      <small> SAMVIC EDUCATION WEBSITE </small>
+    </div>
 
- <!-- ====================== COPYRIGHT ===================== -->
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-<script src="index.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

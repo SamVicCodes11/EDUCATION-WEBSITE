@@ -52,15 +52,6 @@
   background: var(--color-primary);
 }
 
-/* .achievement-card-icon:nth-of-type(1) {
-}
-.achievement-card-icon:nth-of-type(2) {
-}
-.achievement-card-icon:nth-last-of-type(1) {
-
-while this did not work
-} */
-
 .achievement-card span .uil {
   font-size: 1.5rem;
 }
@@ -79,6 +70,7 @@ while this did not work
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
   background: var(--color-bg1);
 }
+
 .team-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -114,13 +106,6 @@ while this did not work
   margin-top: 1.5rem;
 }
 
-/* .team .team-info * {
-  text-align: center;
-  margin-top: 1.5rem;
-
-  what does the * signify
-} */
-
 .team .team-info small {
   font-weight: 500;
   color: var(--color-light);
@@ -149,5 +134,82 @@ while this did not work
   margin-bottom: 0.7rem;
 }
 
-/* ============= COURSES ==================== */
+@media screen and (max-width: 1024px) {
+  /* =============  ACHIEVEMENTS ==================== */
 
+  .achievements {
+    padding: 6rem 0 3rem;
+  }
+  .achievements-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .achievement-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .achievement-right h2 {
+    text-align: center;
+  }
+
+  .achievement-right-small{
+    display: inline-block;
+    text-align: center;
+  }
+
+  .achievement-card {
+    margin-top: 0rem;
+  }
+
+  .achievement-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* =============  TEAM ==================== */
+
+  .team-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .team {
+    padding: 1rem;
+  }
+
+  .team .avatar img {
+    filter: saturate(1);
+  }
+
+  .team-socials {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* =============  ACHIEVEMENTS ==================== */
+
+  .achievements-container {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* =============  TEAM ==================== */
+
+  .team-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .team-socials {
+    padding: 0.7rem;
+  }
+}
