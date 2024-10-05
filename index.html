@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- FONT AWESOME -->
 
     <link
       rel="stylesheet"
@@ -41,6 +42,12 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+
+    <style>
+      body {
+        background-image: url("./images/bg-texture.png");
+      }
+    </style>
   </head>
 
   <body>
@@ -75,7 +82,7 @@
             officia labore?
           </p>
 
-          <a class="btn btn-primary">Get Started</a>
+          <a href="/" class="btn btn-primary">Get Started</a>
         </div>
 
         <div class="header-right">
@@ -588,9 +595,9 @@
 
           <ul class="links">
             <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Courses</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
         </div>
 
@@ -614,53 +621,73 @@
 
           <ul class="links icon-links">
             <li>
-              <a href="/"><i class="fa-brands fa-facebook footer-icon"></i></a>
+              <a
+                href="https://www.facebook.com/akpobasa.victor?mibextid=rS40aB7S9Ucbxw6v"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i class="fa-brands fa-facebook footer-icon"></i>
+              </a>
             </li>
             <li>
-              <a href="/"><i class="fa-brands fa-linkedin footer-icon"></i></a>
+              <a
+                href="https://www.linkedin.com/in/samviccodes"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i class="fa-brands fa-linkedin footer-icon"></i>
+              </a>
             </li>
             <li>
-              <a href="/"><i class="fa-brands fa-whatsapp footer-icon"></i></a>
+              <a
+                href="https://wa.me/2348146557494"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i class="fa-brands fa-whatsapp footer-icon"></i>
+              </a>
             </li>
             <li>
-              <a href="/"><i class="fa-brands fa-twitter footer-icon"></i></a>
+              <a
+                href="https://x.com/SamVicCodes"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <i class="fa-brands fa-x-twitter footer-icon"></i>
+              </a>
             </li>
           </ul>
+          
         </div>
-
-        <!-- FONT AWESOME -->
-        <!-- <i class="fa-brands fa-facebook"></i> -->
-        <!-- <i class="fa-brands fa-linkedin"></i> -->
-        <!-- <i class="fa-brands fa-whatsapp"></i> -->
-        <!-- <i class="fa-brands fa-twitter"></i> -->
-        <!-- <i class="fa-brands fa-instagram"></i> -->
-
-        <!-- <i class="fa-solid fa-plus"></i> -->
-        <!-- <i class="fa-solid fa-minus"></i> -->
-        <!--  -->
       </div>
     </footer>
 
     <!-- ====================== COPYRIGHT ===================== -->
 
     <div class="copyright">
-      <small> SAMVIC EDUCATION WEBSITE </small>
+      <small> SAMVIC EDUCATION WEBSITE 2024 </small>
     </div>
 
     <script src="index.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 2, // Default for larger screens
         spaceBetween: 30,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         breakpoints: {
+          // When the window is >= 600px
           600: {
             slidesPerView: 2,
+          },
+          // When the window is < 600px (mobile view)
+          0: {
+            slidesPerView: 1, // One slide per view on mobile
           },
         },
       });
