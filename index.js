@@ -4,22 +4,42 @@ window.addEventListener("scroll", () => {
 })
 
 
-const faqs = document.querySelectorAll(".faq")
+const faqs = document.querySelectorAll(".faq");
 
 faqs.forEach(faq => {
    faq.addEventListener("click", () => {
+      // Toggle the "open" class on the clicked FAQ
+      faq.classList.toggle("open");
 
-      faq.classList.toggle("open")
+      // Select the icon within the clicked FAQ
+      const faqIcon = faq.querySelector("i");
 
-      const faqIcon = document.querySelector(".faq i")
-      if(faqIcon.className === "fa-solid fa-plus"){
-faqIcon.className === "fa-solid fa-minus"
+      // Check and update the icon's class
+      if (faqIcon.className === "fa-solid fa-plus") {
+         faqIcon.className = "fa-solid fa-minus"; // Change to minus
       } else {
-         faqIcon.className === "fa-solid fa-plus"
-
+         faqIcon.className = "fa-solid fa-plus"; // Change to plus
       }
-   })
-})
+
+      // Select the answer element
+      const answer = faq.querySelector(".answer");
+
+      // If the FAQ is open, set max-height to its scrollHeight, else set to 0
+      if (faq.classList.contains("open")) {
+         answer.style.maxHeight = `${answer.scrollHeight}px`; // Set max-height to the actual height of the answer
+      } else {
+         answer.style.maxHeight = `0`; // Reset max-height to 0
+      }
+
+      // Update aria-expanded attribute for accessibility
+      faq.setAttribute("aria-expanded", faq.classList.contains("open"));
+   });
+});
+
+
+
+
+
 
 
 const menu = document.querySelector(".menu")

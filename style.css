@@ -256,7 +256,7 @@ article:nth-of-type(6) span {
 /* ============= COURSES ==================== */
 
 .courses {
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
 
 .courses-wrapper {
@@ -303,15 +303,32 @@ article:nth-of-type(6) span {
   font-size: 0.9rem;
   cursor: pointer;
   height: fit-content;
+  transition: transform 0.3s ease;
 }
 
 .faq h4 {
   font-size: 0.95rem;
 }
 
-.answer {
+.faq .answer {
+  max-height: 0;
+  overflow: hidden;
   display: none;
-  margin-top: 1rem;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.faq.open .answer {
+  opacity: 1;
+  max-height: 500px;
+
+}
+
+.faq.open i {
+  transform: rotate(180deg); /* Rotate icon when open */
+}
+.faq i {
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
 }
 
 .faq.open p {
