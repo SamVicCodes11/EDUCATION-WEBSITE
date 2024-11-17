@@ -42,38 +42,59 @@ faqs.forEach(faq => {
 // NAV MENU
 
 
-const menu = document.querySelector(".menu");
-const closeMenuIcon = document.querySelector(".close-menu");
-const openMenuIcon = document.querySelector(".open-menu");
+const navMenu = document.querySelector(".menu");
+const closMenu = document.querySelector(".close-menu");
+const openMenu = document.querySelector(".open-menu");
+
 
 // Function to open the menu
-openMenuIcon.addEventListener("click", () => {
-   menu.style.display = "block";
-   closeMenuIcon.style.display = "block";
-   openMenuIcon.style.display = "none";
+openMenu.addEventListener("click", () => {
+  navMenu.style.display = "block";
+  openMenu.style.display = "none";
+  closMenu.style.display = "block";
 });
 
 // Function to close the menu
-closeMenuIcon.addEventListener("click", () => {
-   closeMenu();
+closMenu.addEventListener("click", () => {
+  closeMenu();
 });
+
+// Function to close the menu and reset styles
+function closeMenu() {
+  navMenu.style.display = "none";
+  openMenu.style.display = "block";
+  closMenu.style.display = "none";
+}
 
 // Function to handle clicks outside the menu
 document.addEventListener("click", (event) => {
-   const isClickInsideMenu = menu.contains(event.target);
-   const isClickOnIcons = openMenuIcon.contains(event.target) || closeMenuIcon.contains(event.target);
+  // Check screen width
+  const maxWidth = 1024;
+  if (window.innerWidth <= maxWidth) {
+    const isClickInsideMenu = navMenu.contains(event.target);
+    const isClickOnIcons =
+      openMenu.contains(event.target) || closMenu.contains(event.target);
 
-   if (!isClickInsideMenu && !isClickOnIcons) {
+    if (!isClickInsideMenu && !isClickOnIcons) {
       closeMenu();
-   }
+    }
+  }
 });
 
-// Function to close menu and toggle icons
-function closeMenu() {
-   menu.style.display = "none";
-   closeMenuIcon.style.display = "none";
-   openMenuIcon.style.display = "block";
-}
+// Listen for window resize to reset desktop styles
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1024) {
+    // Reset menu styles for desktop view
+    navMenu.style.display = "flex"; // Ensure the menu is visible
+    openMenu.style.display = "none"; // Hide the open icon
+    closMenu.style.display = "none"; // Hide the close icon
+  } else {
+    // Reset styles for mobile/tablet view
+    navMenu.style.display = "none"; // Ensure menu is hidden initially
+    openMenu.style.display = "block"; // Show the open icon
+    closMenu.style.display = "none"; // Hide the close icon
+  }
+});
 
 
 

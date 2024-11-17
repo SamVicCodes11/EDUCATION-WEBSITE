@@ -444,16 +444,21 @@ footer li {
   font-weight: 800;
 }
 
+
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
+
   h1 {
     font-size: 2rem;
   }
+
   h2 {
     font-size: 1.7rem;
   }
+
+
   h3 {
     font-size: 1.4rem;
   }
@@ -479,7 +484,7 @@ footer li {
     place-items: center;
     box-shadow: -4rem 1rem 10rem rgba(0, 0, 0, 0.5);
     animation: navAnimation 400ms linear forwards;
-    transform-origin: top right;
+    transform-origin: top;
     opacity: 0;
   }
 
@@ -497,6 +502,7 @@ footer li {
   nav ul li:nth-child(4) {
     animation-delay: 600ms;
   }
+
 
   @keyframes navAnimation {
     0% {
