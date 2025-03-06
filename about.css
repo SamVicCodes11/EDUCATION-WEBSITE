@@ -123,6 +123,7 @@
   flex-direction: column;
   box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
   transition: var(--transition);
+
 }
 
 .team:hover .team-socials {
